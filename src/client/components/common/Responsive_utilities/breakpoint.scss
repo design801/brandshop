@@ -1,0 +1,15 @@
+@import 'utils';
+
+:export {
+  // desktopMin:  $large-width + 1px;
+  // tabletMin:   $medium-width;
+  // tabletMax:   $large-width;
+  // phoneMax:   $medium-width - 1px;
+  
+  desktopMin:  $desktop-width;
+  tabletMin:   $mobile-width + 1px;
+  tabletMax:   $desktop-width - 1px;
+  phoneMax:   $mobile-width;
+
+}
+

@@ -1,0 +1,127 @@
+@import 'utils';
+
+.ConstructPanel {
+  position: relative;
+  width: 100%;
+  
+  @include media("<=mobile") {
+    width: 100%;
+    height: auto;
+  }
+
+  
+  .PanelWrp {
+
+    width: 100%;
+    height: 0;
+    padding-top: calc(100% * 1080 / 1920);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    
+  
+    @include media("<=mobile") {
+      width: 100%;
+      height: 0;
+      padding-top: calc(100% * 1160 / 640);
+      background-repeat: no-repeat; 
+      background-size: cover;
+    }
+  }
+
+
+  .iconDiv {
+    // position: relative;    
+    background-color: red;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 13.3%;
+
+    // background: url('/static/images/shop/main/bg.jpg') no-repeat center center fixed;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
+
+    background-position: center;
+    background-size: cover;  
+    
+    .nouIcon {
+      fill: #fff;
+      width: 80px;
+      height: 80px;      
+      
+
+      @include media("<=mobile") {
+        margin-bottom: 10%;
+      }
+
+      @media screen and (max-width : $mobile-width) and (orientation: landscape) {      
+        margin-bottom: 2%;
+        width: 60px;
+        height: 60px;
+      }
+    }
+    
+    .commonTextStyle {
+      font-family: "DIN Black", sans-serif;
+      font-size: 28px;
+      margin-top: 1%; 
+      color: white;           
+    }
+    
+    .dataTextStyle {
+      font-size: 14px;    
+      color: white;  
+    }
+    
+    .descTextStyle {
+      font-size: 18px;
+      line-height: 1.8em;
+      color: white;  
+      font-weight: 400;
+
+      @include media("<=mobile") {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width : $mobile-width) and (orientation: landscape) {      
+        font-size: 8px;
+      }
+    }
+  
+    .endTextStyle {
+      font-size: 21px;
+      margin-top: 1%;
+      margin-bottom: 1%;
+      color: white;  
+
+      @include media("<=mobile") {
+        font-size: 14px;
+        margin-top: 0%;
+        margin-bottom: 5%;
+      }
+
+      @media screen and (max-width : $mobile-width) and (orientation: landscape) {      
+        font-size: 8px;
+        margin-top: 0%;
+        margin-bottom: 1%;
+      }
+    }
+
+    @include media("<=mobile") {
+      padding: 0;
+      align-items: center;
+    }
+    
+    
+  }
+
+}
+

@@ -1,0 +1,32 @@
+@import 'lib/all';
+
+// $small-width: 320px;
+// $medium-width: 768px;
+// $large-width: 1024px;
+// $wide-width: 1400px;
+// $breakpoints: (small: $small-width, medium: $medium-width, large: $large-width, wide: $wide-width);
+
+$mobile-width: 640px;
+$tablet-width: 1024px;
+$desktop-width: 1400px;
+
+$breakpoints: (mobile: $mobile-width, tablet: $tablet-width, desktop: $desktop-width);
+
+
+
+@mixin public_hover_transparent() {  
+  &:hover, &:active {
+    background : transparent;
+  }
+}
+              
+@mixin public_responsivePadding {
+  display: block;
+  max-height: 5px;
+  color:transparent;
+}
+
+@mixin public_content_padding {  
+  height: 10px;
+  background-color: transparent;
+}

@@ -1,0 +1,28 @@
+@import 'utils';
+
+.manager_create {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+
+    .root {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .typo {
+        display: flex;
+        padding-left: 32px;
+        padding-top: 32px;
+    }
+
+    .title {
+        width: 256px;
+    }
+
+    .button {
+        margin-top: 32px;
+        padding: 16px;
+    }
+}
+

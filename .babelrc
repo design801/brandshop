@@ -1,0 +1,27 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ],
+        "alias": {
+          "@components"  : "./src/client/components",
+          "@styles"      : "./src/client/styles",
+          "@lib"         : "./src/client/lib",
+          "@pages"       : "./src/client/pages",
+          "@store"       : "./src/client/store",
+          "@containers"  : "./src/client/containers",
+          "@common"      : "./src/common",
+          "@server"      : "./src/server",
+          "@src"         : "./src",
+          "@static"      : "./static"
+        }
+      }
+    ]
+  ]
+}

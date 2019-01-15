@@ -1,0 +1,34 @@
+{
+  "name": "numix web server",
+  "production": {
+    "key": "privkey.pem",
+    "cert": "fullchain.pem",
+    "serverURL": "http://nouroom.com/api",
+    "uploadURL" : "http://nouroom.com/upload",
+    "chattingURL": "http://192.168.1.55:12345",
+    "gameStopURL": "http://192.168.1.55:12346",
+    "bitcoinNetwork": 3,
+    "mongodb": "mongodb://localhost:27017"
+  },
+  "development": {
+    "serverURL": "http://nouroom.com/api",
+    "uploadURL" : "http://nouroom.com/upload",
+    "chattingURL": "http://localhost:12345",
+    "gameStopURL": "http://localhost:12346",
+    "bitcoinNetwork": 3,
+    "mongodb": "mongodb://localhost:27017"
+  },
+  "game": {
+    "stop": {
+      "bustMaxTime": 38000,
+      "bustMaxValue": 100,
+      "bettingValue": 100
+    }
+  },
+  "createServer": "http",
+  "trustIP": [],
+  "log": true,
+  "secret_client": "vipjer#2309f=][]d0#fkFsmn..1@#)(=+=.",
+  "secret_server": "v0o3kkv..,=0k,xnmzdlv#$$@_+=1@#4ff()",
+  "port": 9996
+}

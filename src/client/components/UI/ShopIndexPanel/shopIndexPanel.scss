@@ -1,0 +1,195 @@
+@import 'utils';
+
+.ShopIndexPanel {
+
+  position: relative;
+  width: 100%;
+
+  @include media("<=mobile") {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .ShopIndexPanelWrp {
+
+    width: 100%;
+    height: 0;
+    padding-top: calc(100% * 1080 / 1920);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    @include media("<=mobile") {
+      width: 100%;
+      height: 0;
+      padding-top: calc(100% * 1160 / 640);
+      background-repeat: no-repeat; 
+      background-size: cover;
+    }
+  
+  }
+
+  .imageStyle {
+    object-fit: cover;
+    width:100%;
+    height:100%;
+  }
+
+  .tempStyle {
+    position: absolute;
+    top:42%;
+    left:50%;        
+  }
+
+  .bottomNavMenu {        
+    width: 100%;
+    height: 100%;    
+    display: flex;    
+    flex-direction: column;            
+  }
+
+  .fabMenu {
+    width: 100%;
+    height:100%;
+    display: flex;    
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-end;        
+  }
+  
+  .logoStyle {
+    position: absolute;
+    top: 3.5%;
+    left: 5%;
+    transform: translate(-5%, -4%);
+    font-family: "DIN Medium", sans-serif;
+    img {
+      cursor: pointer;
+    }
+
+    @include media("<=mobile") {
+      left: 50%;
+      transform: translate(-50%, -4%);
+    }
+  }
+
+  .logoMobileStyle {
+    position: absolute;
+    bottom: 8%;
+    left: 8%;
+    font-family: "DIN Medium", sans-serif;
+        
+    img {
+      cursor: pointer;
+    }
+  }
+
+
+  .archiveTextTitle {
+    color:white;
+    font-size: 19px;
+    //margin-bottom:  calc(1.8vw  - (1920px - 80vw) * 0.015 );
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-weight: 800;    
+    @include media("<=mobile") {
+      margin-bottom: 10%;
+      font-size: 16px;
+    }
+  }
+  .archiveText {
+    color:white;
+    font-size: 19px;
+    //margin-bottom:  calc(1.8vw  - (1920px - 80vw) * 0.015 );
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
+    line-height: 1;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+
+    @include media("<=mobile") {
+      margin-bottom: 13%;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .archiveButton {
+    background-color: #fff;
+  }
+
+  .iconStyle {
+    fill: #fff;
+    width: 35px;
+    height: 35px;
+  }  
+
+  .icon-wrp {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    cursor: pointer;
+
+    .icon-oh {
+      display: inline-block;
+      line-height: 1;
+      vertical-align: middle;
+      font-size: 28px;
+
+      svg {
+        height: 1em;
+        fill: currentColor;
+        stroke: currentColor;
+        vertical-align: middle;
+        width: 1em;
+      }
+    }
+  }
+
+  .buttonStyle {
+      margin: 0 auto;
+  }
+
+  .paperStyle {
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    left: 30%;
+    top: 0;
+    background-color: #000; 
+    opacity: 0.8;
+    
+    .closeButton {
+      position: absolute;
+      right: 0;
+      margin: 0.5%;
+      color: white;
+    }
+
+    .link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 64px;
+
+      .alink {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-top: 1px solid gray;
+        width: 80%;
+        text-align: center;
+
+        &.active {
+          text-decoration: underline;
+          font-weight: bold;
+        }
+      }
+
+      .alink:last-child {
+        border-bottom: 1px solid gray;
+      }
+    }
+  }
+}

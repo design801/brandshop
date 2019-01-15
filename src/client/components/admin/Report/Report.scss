@@ -1,0 +1,58 @@
+@import 'utils';
+
+.Report {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding-top: 32px;
+    padding-left: 32px;
+
+    margin: auto;
+    color: black;
+
+    .image_input {
+        
+        display: flex;
+        align-content: center;
+        align-items: center;        
+        
+        .box-icon img {
+            display: inline-block;            
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+        }
+        
+    }
+
+    .imageSetting {
+        width: 600px;
+        margin:10px;
+    }
+
+    .id_input {
+        width: 300px;
+        display: inline-block;        
+        margin: 10px;
+    }
+  
+    .inline {
+        display: inline-block;
+    }
+
+    .title {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .buttonStyle {
+        margin: 10px;
+    }
+
+    .brandTitle {        
+        display: inline-block;                        
+        padding-right: 30px;            
+    }
+}
+

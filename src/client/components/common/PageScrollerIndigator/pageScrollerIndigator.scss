@@ -1,0 +1,43 @@
+@import 'utils';
+
+.pageScrollerIndigator {  
+  display: none;
+  position: absolute;  
+  right: 5%;  
+  top: 50%;
+  transform: translate(95%, -50%);
+  height: 30%;
+  margin-top: -2%;
+
+  &.open {
+    display: flex;
+
+    @include media("<=mobile") {
+      display: none;
+    }
+  }
+
+  &.row {
+    display: flex;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    top: auto;
+    right: auto;
+    height: auto;
+    width: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .flexStyle {
+    display: flex;
+    flex-direction: column;      
+    justify:space-between;
+  }
+
+  .buttonStyle {    
+    &:hover {      
+      background-color: transparent;
+    }    
+  }
+}

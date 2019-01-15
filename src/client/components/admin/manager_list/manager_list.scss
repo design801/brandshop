@@ -1,0 +1,41 @@
+@import 'utils';
+
+.manager_list {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+
+    .typo {
+        display: flex;
+        padding-top: 32px;
+    }
+
+    .title {
+        width: 256px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .button {
+        color: white;
+        background-color: blue;
+
+        &.del {
+            background-color: red;
+        }
+
+        &.change {
+            background-color: green;
+        }
+
+        &.main {
+            background-color: blue;
+        }
+    }
+
+    .select {
+        background-color:#FFF8DC;
+    }
+}

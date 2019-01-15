@@ -1,0 +1,30 @@
+@import 'utils';
+
+.MainPanel {
+    width: 100%;
+    height: 90vh;          
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .bottomNavMenu {                
+        min-height:100%;
+        display: flex;    
+        flex-direction: column;
+        align-content: flex-end;
+        justify-content: flex-end;        
+    }
+
+    .fabMenu {
+        min-height:100%;
+        display: flex;    
+        flex-direction: column;
+        align-content: flex-end;
+        justify-content: flex-end;        
+    }
+
+    .clipboardStyle {
+    
+    }
+}

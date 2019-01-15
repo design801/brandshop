@@ -1,0 +1,36 @@
+@import 'utils';
+
+#page-container {
+
+    .page-container-FixedTopPosition {
+        position: fixed;
+        bottom: 3%;
+        right: 5%;
+        transform: translateX(95%);
+
+        .page-container-buttonStyle {        
+            display: flex;    
+            margin-left: -16px;
+            cursor: pointer;
+        
+            &:hover {      
+              background-color: transparent;      
+            }    
+
+            @include media("<=mobile") {
+              margin-left: -30px;
+            }  
+        }
+
+        .page-container-iconStyle {
+            fill: #fff;
+            width: 27px;
+            height: 27px;
+
+            @include media("<=mobile") {
+              width: 36px;
+              height: 36px;
+            }  
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import 'utils';
+
+#snackbar-container {
+
+  .snackbar {
+    margin: 0;
+
+    .success {
+      background-color: $oc-green-9;
+    }
+  
+    .warning {
+      background-color: $oc-yellow-9;
+    }
+  
+    .error {
+      background-color: $oc-red-9;
+    }
+  
+    .info {
+      background-color: $oc-blue-9;
+    } 
+  
+    .icon {
+      font-size: 20px;
+    }
+  
+    .iconVariant {
+      opacity: 0.9;
+      margin-right: 1rem;
+    }
+  
+    .message {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+    }
+  }
+  
+}

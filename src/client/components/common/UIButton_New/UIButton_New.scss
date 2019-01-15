@@ -1,0 +1,25 @@
+@import 'utils';
+
+.css-button {
+
+  &.root {
+    margin-top: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+
+    .bootstrapRoot {
+      color: white;
+      font-size: 20px;
+      border: 1px solid #e58929;
+      background: #e58929;
+      box-shadow: 0 0 0 0.2rem rgba(229,137,41,.6);
+
+      &:hover {
+        background: rgba(229,137,41,.6);
+      }
+    }
+  }
+
+  
+
+}

@@ -1,0 +1,57 @@
+@import 'utils';
+
+.FixedMenu {
+
+  .FixedMenu-root {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%, -50%);
+    width: 36px;
+    height: calc(10.5vw  + (1980px - 100vw) * 0.07 );
+    margin-top: -2%;
+    
+    &.open {
+      display: flex;
+
+      @include media("<=mobile") {
+        display: none;
+      }  
+    }
+  }
+
+  .FixedMenu-FixedTopPosition {
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    transform: translateX(95%);
+  }
+
+  .FixedMenu-listStyle {    
+    
+  }
+
+  .FixedMenu-buttonStyle {        
+    display: flex;    
+    margin-left: -16px;
+    cursor: pointer;
+
+    &:hover {      
+      background-color: transparent;      
+    }    
+    @include media("<=mobile") {
+      margin-left: -30px;
+    }  
+  }
+
+  .FixedMenu-iconStyle {
+    fill: #fff;
+    width: calc(2vw  + (1920px - 90vw) * 0.005 );
+    height: calc(2vw  + (1920px - 90vw) * 0.005 );
+    @include media("<=mobile") {
+      width: 36px;
+      height: 36px;
+    }  
+  }  
+}

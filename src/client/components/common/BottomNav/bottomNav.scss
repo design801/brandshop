@@ -1,0 +1,80 @@
+@import 'utils';
+
+.BottomNav {    
+  position: absolute;    
+  width: 100%;   
+  bottom: 4%;   
+  
+  .BottomNav-centerMenu {    
+    position: relative;
+    display: flex;        
+    width: calc(30vw  + (1920px - 90vw) * 0.1 );
+    left: 50%;
+    height: 5%;
+    transform: translateX(-50%);    
+    flex-direction: row;    
+    align-content: space-around;      
+  }
+  
+  .BottomNav-linkStyle {    
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;    
+    font-weight: 400;   
+    width: 90px;     
+    &:hover {            
+      font-size: 1vw;            
+      font-weight: 700;
+    }    
+  }
+
+  .BottomNav-choiceStyle {    
+    color: white;        
+    font-size: 1vw;    
+    text-decoration: underline;
+    font-weight: 700;
+    width: 90px;            
+    &:hover {      
+      background-color: transparent;            
+      text-decoration: underline;
+    }    
+  }
+
+
+  .BottomNav-shop_underline {
+    color: white;        
+    border-bottom:2px solid white;          
+    height:38px;
+  }
+
+  .BottomNav-buttonPosition {
+    position: relative;
+    top:10px;    
+    @media screen and (max-width: 400px) {      
+      margin-top: -1px;
+    }
+  
+  }
+
+  .BottomNav-shareButtonStyle {
+    padding-left: 0px;
+    cursor: pointer;
+
+    &:hover {      
+      background-color: transparent;                  
+    }    
+  }
+
+  .BottomNav-clipboardStyle {        
+    position: absolute;    
+    bottom: 0%;
+    left: 5%;
+    transform: translateX(-30%);    
+  }
+
+  .BottomNav-iconStyle {
+    fill: #fff;
+    width: calc(2vw  + (1920px - 90vw) * 0.005 );
+    height: calc(2vw  + (1920px - 90vw) * 0.005 );
+  }
+}
